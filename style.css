@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kantumruy Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+  .container {
+   position: relative;
+   background-color: white;
+}  
+
+
+.circle-container {
+  background-color: #dd5356;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: -75px;
+  left: -75px;
+  position: relative;
+  
+}
+
+#open {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  color: #fff;
+}
+
+#close {
+  position: absolute;
+  top: 70%;
+  right: 45%;
+  transform: rotate(20deg);
+  color:#dd5356
+}
+
+/* .circle-container i {
+  color: #fff;
+} */
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: -4.5rem 1rem 2rem 1rem;
+  position: absolute;
+  background-color: white;
+}
+
+.content h4 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 25rem;
+  padding-bottom: 1rem;
+}
+
+nav {
+  width: 100%;
+  padding-top: 30rem;
+  padding-bottom: 3rem;
+  background-color: white;
+}
+
+ul li {
+  margin-bottom: 0.3rem
+}
+
+ul li:first-child {
+  margin-left: 0.5rem;
+}
+
+ul li:nth-child(2) {
+  margin-left: 1.2rem;
+}
+
+ul li:nth-child(3) {
+  margin-left: 1.9rem;
+}
+
+ul li a{
+  color: #fff;
+}
+
+ul li a i {
+  padding-right: 0.3rem;
+}
+
+.active {
+  transform: rotate(-20deg);
+}
+
+.wrapper {
+  transform-origin: top left;
+  transition: all 0.5s linear;
+}
+
+@media(min-width: 768px) {
+  .active {
+    transform: rotate(-15deg);
+  }
+
+  #close {
+    transform: rotate(15deg);
+  }
+
+  nav {
+    padding-top: 25rem;
+  }
+}
